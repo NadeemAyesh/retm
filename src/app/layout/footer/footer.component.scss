@@ -1,0 +1,19 @@
+.main-footer {
+  a {
+    text-decoration: none;
+    display: inline-block;
+    i {
+      margin-right: 5px;
+    }
+  }
+
+  p {
+    margin-bottom: 0;
+  }
+
+  a, p {
+    color: #737373;
+    font-size: 12px;
+    font-weight: 300;
+  }
+}

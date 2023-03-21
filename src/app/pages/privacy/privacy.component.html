@@ -1,0 +1,48 @@
+<section class="section privacy-section">
+  <div class="container-fluid h-100">
+    <app-inner-header></app-inner-header>
+
+    <div class="row height-row flex-nowrap align-items-center">
+
+      <div class="col flexy-side-col">
+        <app-navigation [step]="1"></app-navigation>
+      </div>
+
+      <div class="col flex-grow-1">
+        <div class="row justify-content-center">
+          <div class="col-lg-5">
+            <div class="box white-box">
+              <header class="box-header text-center">
+                <h4>الشروط <span>والأحكام</span></h4>
+              </header>
+
+              <div class="text pivacy-text">
+                <p>هناك حقيقة مثبتة منذ زمن طويل وهي أن المحتوى المقروء لصفحة ما سيلهي القارئ عن التركيز على الشكل الخارجي للنص أو شكل توضع الفقرات في الصفحة التي يقرأها. ولذلك يتم استخدام طريقة لوريم إيبسوم لأنها تعطي توزيعاَ طبيعياَ -إلى حد ما- للأحرف عوضاً عن استخدام "هنا يوجد محتوى نصي، هنا يوجد محتوى نصي" فتجعلها تبدو (أي الأحرف) وكأنها نص مقروء. العديد من برامح النشر المكتبي وبرامح تحرير صفحات الويب تستخدم لوريم إيبسوم بشكل إفتراضي كنموذج عن النص، وإذا قمت بإدخال "lorem ipsum" في أي محرك بحث ستظهر العديد من المواقع الحديثة العهد في نتائج البحث. على مدى السنين ظهرت نسخ جديدة ومختلفة من نص لوريم إيبسوم، أحياناً عن طريق الصدفة، وأحياناً عن عمد كإدخال بعض العبارات الفكاهية إليها الشكلي منذ القرن الخامس عشر عندما قامت مطبعة مجهولة برص مجموعة من الأحرف بشكل عشوائي أخذتها من نص، لتكوّن كتيّب بمثابة دليل أو مرجع شكلي لهذه الأحرف. خمسة قرون من الزمن لم تقضي على هذا النص، بل انه حتى صار مستخدماً وبشكله الأصلي في الطباعة والتنضيد الإلكتروني. انتشر بشكل كبير في ستينيّات هذا القرن مع إصدار رقائق "ليتراسيت" (Letraset) البلاستيكية تحوي مقاطع من هذا النص، وعاد لينتشر مرة أخرى مؤخراَ مع ظهور برامج النشر الإلكتروني مثل "ألدوس بايج مايكر" (Aldus PageMaker) والتي حوت أيضاً على نسخ من نص لوريم إيبسوم.
+                </p>
+              </div>
+
+              <div class="form-group" style="margin-bottom: 24px;">
+                <!-- قرأتُ و اوافق على الشروط و الأحكام التي تم ذكرها أعلاه. -->
+                <div class="form-check">
+                  <input class="form-check-input" type="checkbox" value="" id="flexCheckChecked" checked>
+                  <label class="form-check-label" for="flexCheckChecked">
+                    قرأتُ و اوافق على الشروط و الأحكام التي تم ذكرها أعلاه.
+                  </label>
+                </div>
+              </div>
+
+              <button type="button" class="btn btn-ratem" [routerLink]="'/service-code'">الخطوة التالية</button>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="col flexy-side-col align-self-center">
+
+      </div>
+
+    </div>
+
+    <app-footer></app-footer>
+  </div>
+</section>

@@ -1,0 +1,51 @@
+.hero {
+  height: calc(100vh - 129px);
+
+  .hero-wrapper  {
+    height: 100%;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+  }
+  .hero-text {
+    text-align: center;
+    max-width: 445px;
+    h1 {
+      color: var(--secondary-color);
+      font-size: 40px;
+      line-height: 56px;
+      font-weight: 700;
+      margin-bottom: 30px;
+      span {
+        color: var(--primary-color);
+        display: inline-block;
+      }
+    }
+    p {
+      color: #737373;
+      font-size: 18px;
+      line-height: 30.6px;
+      font-weight: 300;
+      margin-bottom: 30px;
+      font-family: "Teshrin AR LT Regular";
+    }
+
+    .btn {
+      padding: 12px 24px;
+      background-color: #007aff;
+      border-color: #007aff;
+      border-radius: 8px;
+
+      &:hover {
+        background-color: #0057b5;
+      }
+    }
+  }
+
+  .hero-img {
+    width: 100%;
+    height: 400px;
+    margin: 0;
+    background: url(/assets/images/hero.gif) no-repeat center bottom / contain;
+  }
+}

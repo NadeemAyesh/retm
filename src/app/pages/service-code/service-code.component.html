@@ -1,0 +1,52 @@
+<section class="service-code section">
+  <div class="container-fluid h-100">
+    <app-inner-header></app-inner-header>
+
+    <div class="row height-row flex-nowrap align-items-center">
+
+      <div class="col flexy-side-col">
+        <app-navigation [step]="2"></app-navigation>
+      </div>
+
+      <div class="col flex-grow-1">
+        <div class="row justify-content-center">
+          <div class="col-lg-5">
+            <header class="step-header">
+              <h1><span>حجز</span> رمز الخدمة</h1>
+              <p>
+                قم بإنشاء سحابتك عبر نظام رتم
+              </p>
+            </header>
+            <form class="form">
+              <div class="form-group">
+                <label for="serviceCode">رمز الخدمة</label>
+                <input id="serviceCode" type="text" name="domain" [(ngModel)]="domain" class="form-control" placeholder="انشئ رمز الخدمة الخاص بك ( 4 حروف لاتينية )" (blur)="checkDomainAvailable()" [class.border-success]="showTrueBorder" [class.border-danger]="showErrorBorder" />
+              </div>
+              <div class="form-group">
+                <div class="box box-url">
+                  <p class="mb-0"><span><i class="bi bi-lock"></i> &nbsp; https://<strong>{{ domain }}</strong></span>.retm.sa</p>
+                </div>
+              </div>
+
+              <div class="alert alert-light" role="alert">
+                <p>رمز الخدمة هو ترميز فريد لا يجتمع اكثر من تاجر بنفس الرمز، غالبا تحتاج الرمز عند تسجيل الدخول او الدعم الفني.</p>
+                <p>
+                  اختر رمز مكون من احرف انجليزية من 4 خانات او اكثر، بدون مسافات وارقام.
+                </p>
+              </div>
+
+              <button type="button" class="btn btn-ratem w-100" [disabled]="disbleButton" [routerLink]="'/registration'">حجز رمز الخدمة</button>
+            </form>
+          </div>
+        </div>
+      </div>
+
+      <div class="col flexy-side-col align-self-center">
+
+      </div>
+
+    </div>
+
+    <app-footer></app-footer>
+  </div>
+</section>

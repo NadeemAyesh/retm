@@ -1,0 +1,22 @@
+.err-text {
+  h1 {
+    position: relative;
+    margin-top: 0;
+    margin-bottom: 0;
+    color: var(--secondary-color);
+    font-size: 56px;
+    line-height: 72.8px;
+    font-weight: 700;
+
+    span {
+      color: var(--primary-color);
+    }
+  }
+
+  p {
+    color: #737373;
+    font-size: 18px;
+    line-height: 30.6px;
+    font-weight: 300;
+  }
+}

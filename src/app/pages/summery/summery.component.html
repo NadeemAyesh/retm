@@ -1,0 +1,51 @@
+<section class="service-code section">
+  <div class="container-fluid h-100">
+    <app-inner-header></app-inner-header>
+
+    <div class="row height-row flex-nowrap align-items-center">
+
+      <div class="col flexy-side-col">
+        <app-navigation [step]="4"></app-navigation>
+      </div>
+
+      <div class="col flex-grow-1">
+        <div class="row justify-content-center">
+          <div class="col-lg-5">
+            <header class="step-header">
+              <h1><span>الموجز</span> الكامل</h1>
+              <p>
+                في مايلي موجز لبيانات مدير النظام الخاصة بك!
+              </p>
+            </header>
+            <form class="form">
+
+              <div class="form-group">
+                <div class="box box-url d-flex justify-content-between align-items-center">
+                  <p class="mb-0"><span><i class="bi bi-lock"></i> &nbsp; https://<strong>test</strong></span>.retm.sa</p>
+                  <button type="button" class="btn text-success btn-sm" style="font-size: 16px;">تغيير</button>
+                </div>
+              </div>
+
+              <div class="form-group">
+                <label for="serviceCode">اسم المستخدم</label>
+                <div class="box box-url d-flex justify-content-between align-items-center text-start" style="direction: rtl !important;">
+                  <p class="mb-0"><strong>Just_Testing</strong>
+                  </p>
+                </div>
+              </div>
+
+              <button type="button" class="btn btn-ratem w-100 mb-3">الإنتقال لمدير النظام</button>
+            </form>
+          </div>
+        </div>
+      </div>
+
+      <div class="col flexy-side-col align-self-center">
+
+      </div>
+
+    </div>
+
+    <app-footer></app-footer>
+  </div>
+</section>

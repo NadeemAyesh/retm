@@ -1,0 +1,32 @@
+<aside class="side-navigation">
+  <ul class="list-unstyled">
+    <li [routerLink]="'/privacy'">
+      <span class="num" [class.active]="step >= 1">1</span>
+      <div class="flex-grow-1">
+        <h5>شروط الإستخدام</h5>
+        <p>الموافقة على الشروط والأحكام</p>
+      </div>
+    </li>
+    <li [routerLink]="'/service-code'">
+      <span class="num" [class.active]="step >= 2">2</span>
+      <div class="flex-grow-1">
+        <h5>حجز رمز الخدمة</h5>
+        <p>أنشئ رمز الخدمة الخاص بك</p>
+      </div>
+    </li>
+    <li [routerLink]="'/register'">
+      <span class="num" [class.active]="step >= 3">3</span>
+      <div class="flex-grow-1">
+        <h5>صفحة التسجيل</h5>
+        <p>انشئ بيانات الدخول لمدير النظام</p>
+      </div>
+    </li>
+    <li [routerLink]="'/summery'">
+      <span class="num" [class.active]="step == 4">4</span>
+      <div class="flex-grow-1">
+        <h5>الموجز الكامل</h5>
+        <p>تأكد من بياناتك واحجز</p>
+      </div>
+    </li>
+  </ul>
+</aside>
