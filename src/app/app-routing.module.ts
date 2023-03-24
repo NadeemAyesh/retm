@@ -9,9 +9,8 @@ import { ErorrCheckingComponent } from './pages/erorr-checking/erorr-checking.co
 
 const routes: Routes = [
   {
-    path: 'home/:token',
+    path: ':token',
     component: HomeComponent,
-    pathMatch: 'full'
   },
   /* {
     path:':token',

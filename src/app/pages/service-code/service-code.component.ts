@@ -38,4 +38,13 @@ export class ServiceCodeComponent implements OnInit {
     }, 3000);
   }
 
+  CheckInput(event: any): boolean {
+    const charCode = (event.which) ? event.which : event.keyCode;
+    if ((charCode >= 48 && charCode <= 57) || charCode == 32) {
+      return false;
+    }
+    return true;
+
+  }
+
 }

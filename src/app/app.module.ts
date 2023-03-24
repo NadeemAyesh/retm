@@ -18,6 +18,7 @@ import { SummeryComponent } from './pages/summery/summery.component';
 import { ErorrCheckingComponent } from './pages/erorr-checking/erorr-checking.component';
 import { FormsModule, ReactiveFormsModule } from '@angular/forms';
 import { HttpClientModule } from '@angular/common/http';
+import { LoadingComponent } from './layout/loading/loading.component';
 
 @NgModule({
   declarations: [
@@ -32,7 +33,8 @@ import { HttpClientModule } from '@angular/common/http';
     InnerHeaderComponent,
     RegisterComponent,
     SummeryComponent,
-    ErorrCheckingComponent
+    ErorrCheckingComponent,
+    LoadingComponent
   ],
   imports: [
     BrowserModule,

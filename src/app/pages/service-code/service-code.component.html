@@ -20,7 +20,7 @@
             <form class="form">
               <div class="form-group">
                 <label for="serviceCode">رمز الخدمة</label>
-                <input id="serviceCode" type="text" name="domain" [(ngModel)]="domain" class="form-control" placeholder="انشئ رمز الخدمة الخاص بك ( 4 حروف لاتينية )" (blur)="checkDomainAvailable()" [class.border-success]="showTrueBorder" [class.border-danger]="showErrorBorder" />
+                <input id="serviceCode" type="text" name="domain" [(ngModel)]="domain" class="form-control" placeholder="انشئ رمز الخدمة الخاص بك ( 4 حروف لاتينية )" (blur)="checkDomainAvailable()" [class.border-success]="showTrueBorder" [class.border-danger]="showErrorBorder" pattern="[a-z]" (keypress)="CheckInput($event)" />
               </div>
               <div class="form-group">
                 <div class="box box-url">

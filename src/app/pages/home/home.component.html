@@ -1,1 +1,7 @@
-<app-hero></app-hero>
+<app-hero *ngIf="!loading && step == 0 && !error"></app-hero>
+<app-privacy *ngIf="!loading && step == 1 && !error"></app-privacy>
+<app-service-code *ngIf="!loading && step == 2 && !error"></app-service-code>
+<app-register *ngIf="!loading && step == 3 && !error"></app-register>
+<app-summery *ngIf="!loading && step == 4 && !error"></app-summery>
+<app-erorr-checking *ngIf="error"></app-erorr-checking>
+<app-loading *ngIf="loading"></app-loading>

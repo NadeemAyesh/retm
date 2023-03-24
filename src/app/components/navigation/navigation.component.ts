@@ -1,4 +1,5 @@
 import { Component, Input, OnInit } from '@angular/core';
+import { AuthService } from 'src/app/services/auth.service';
 
 @Component({
   selector: 'app-navigation',
@@ -11,10 +12,14 @@ export class NavigationComponent implements OnInit {
   step!: number;
   steps: number = 1;
 
-  constructor() { }
+  constructor(private auth: AuthService) { }
 
   ngOnInit(): void {
     this.steps = this.step;
+  }
+
+  changeStep(stepNumber: number) {
+    this.auth.step.emit(stepNumber);
   }
 
 }
